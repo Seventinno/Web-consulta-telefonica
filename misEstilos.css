@@ -1,0 +1,12 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D0D977;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+

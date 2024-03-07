@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Cell-Land</title>
+    <link rel="stylesheet" type="text/css" href="misEstilos.css">
+    <script src="https://unpkg.com/axios@1.3.4/dist/axios.min.js"></script>
+    <script src="misScripts.js"></script>
+</head>
+<body onload="obtenerTodos()">
+    <div class="titulo">
+        <h1>Cell-Land</h1>
+        <img src="" alt="Icono">
+    </div>
+    <hr class="linea"/>
+        <h2>Administración de productos</h2>
+        <div id="tablaProductos">
+            <table>
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Almacenamiento</th>
+                    <th>Procesador</th>
+                    </tr>
+                </thead>
+                <tbody id="productos">
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h4>Consuta de Modelo</h4>
+            <input type="text" id="busqueda" placeholder="Ingresa el ID">
+            <button onclick="mostrarModelo()">Consultar</button><br><br>
+        </div>
+        <div id="contenedorCampos">
+            <label for="nombre">Nombre</label>
+            <textarea id="nombre" rows="1" cols="25"></textarea>
+        </div>
+        <div id="contenedorCampos">
+            <label for="modelo">Modelo</label>
+            <textarea id="modelo" rows="1" cols="25"></textarea>
+        </div>
+        <div id="contenedorCampos">
+            <label for="color">Color</label>
+            <textarea id="color" rows="1" cols="25"></textarea>
+        </div>
+        <div id="contenedorCampos">
+            <label for="almacenamiento">Almacenamiento</label>
+            <textarea id="almacenamiento" rows="1" cols="25"></textarea>
+        </div>
+        <div id="contenedorCampos">
+            <label for="procesador">Procesador</label>
+            <textarea id="procesador" rows="1" cols="25"></textarea>
+            <br><br>
+        </div>
+        <div>
+            <button onclick="modificar()">Modificar</button>
+            <button onclick="eliminar()">Eliminar</button>
+        </div>
+        <br>
+        <div>
+            <input type="text" id="ingresoID" placeholder="Nombre">
+            <input type="text" id="ingresoNombre" placeholder="Nombre">
+            <input type="text" id="ingresoModelo" placeholder="Modelo">
+            <input type="text" id="ingresoColor" placeholder="Color">
+            <input type="text" id="ingresoAlmacenamiento" placeholder="Almacenamiento">
+            <input type="text" id="ingresoProcesador" placeholder="Procesador">
+        </div>
+        <br>
+        <div>
+            <button onclick="agregar()">Agregar</button>
+        </div>
+
+</body>
+</html>
+
+</body>
+</html>
